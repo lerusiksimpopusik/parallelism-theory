@@ -143,7 +143,7 @@ def get_project_run_result_csv(table_name: str) -> pd.DataFrame:
 @click.argument(
     "cmakelists_dir",
     type=click.Path(exists=True, file_okay=False, dir_okay=True),
-    default="/home/i.trushkin/Parallelizm-Theory/lab3/task2/")
+    default="/home/v.chernodolya/parallelism-theory/task3/task2/")
 @click.argument(
     "project_name", type=str,
     default="task2")
