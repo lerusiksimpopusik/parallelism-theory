@@ -266,13 +266,6 @@ def explain_results(system_info: Dict[str, str]):
     for k, v in system_info.items():
         print(f"{k}: {v}")
 
-    print("\n=== Performance Analysis ===")
-    print("1. GIL (Global Interpreter Lock):")
-    print("   - Python threads are limited by GIL, so multiprocessing helps bypass it.")
-    print("\n2. CPU-bound vs IO-bound:")
-    print("   - Inference is CPU-bound -> multiprocessing more effective than threading.")
-    print("\n3. System utilization:")
-    print("   - Optimal workers count depends on CPU cores and RAM available.")
 
 @click.command()
 @click.argument("video_path", type=click.Path(exists=True))
